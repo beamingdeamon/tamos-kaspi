@@ -83,14 +83,22 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         #'NAME': 'postgres',
-         'NAME': 'tamos-kaspi',
+        'NAME': 'postgres',
         #'Name': 'Digital_Tenge',
         'USER': 'postgres',
         'PASSWORD': '123321',
         # 'PASSWORD': '123456789',
         'HOST': 'localhost',
         'PORT': '5432',
-    }
+    },
+    'ms-sql': {
+        'ENGINE': 'mssql',
+        'NAME': 'tamos_db',
+        'USER': 'tamos',
+        'PASSWORD': 'Tamos@2020',
+        'HOST': '213.166.81.60',
+        'PORT': '14333',
+    },
 
 }
 
